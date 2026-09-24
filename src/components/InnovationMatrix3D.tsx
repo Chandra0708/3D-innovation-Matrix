@@ -218,6 +218,7 @@ export const InnovationMatrix3D: React.FC<InnovationMatrix3DProps> = ({
       canvas: canvasRef.current,
       antialias: true,
       powerPreference: 'high-performance',
+      preserveDrawingBuffer: true,
     });
     renderer.setSize(width, height);
     renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));

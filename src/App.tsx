@@ -228,8 +228,18 @@ export default function App() {
 
   // Export handlers
   const handleExportHTML = useCallback(() => {
-    exportToHTML(innovations);
-  }, [innovations]);
+    // Capture snapshot of the active 3D WebGL canvas
+    const canvas = document.querySelector('canvas') as HTMLCanvasElement | null;
+    let canvasSnapshot: string | null = null;
+    if (canvas) {
+      try {
+        canvasSnapshot = canvas.toDataURL('image/png');
+      } catch (err) {
+        console.warn('Canvas snapshot capture failed:', err);
+      }
+    }
+    exportToHTML(innovations, 'innovation-matrix-report', canvasSnapshot, companyName);
+  }, [innovations, companyName]);
 
   const handleExportCSV = useCallback(() => {
     exportToCSV(innovations);

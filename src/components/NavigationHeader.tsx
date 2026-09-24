@@ -164,7 +164,7 @@ export const NavigationHeader: React.FC<NavigationHeaderProps> = ({
                 </div>
                 <div>
                   <div className="font-semibold text-white">Export as HTML (.html)</div>
-                  <div className="text-xs text-slate-400">Standalone report & backup</div>
+                  <div className="text-xs text-slate-400">Standalone report with 3D graphs</div>
                 </div>
               </button>
 
