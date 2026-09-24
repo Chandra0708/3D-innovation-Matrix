@@ -1,0 +1,6 @@
+{
+  "name": "Innovation Matrix 3D - 108 Cube Spatial Visualizer",
+  "description": "Interactive 3D simulation of a 108-cube innovation taxonomy across Type (9), Nature (3), and Locus (4) dimensions with glowing visual illumination and uniform cube architecture.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
